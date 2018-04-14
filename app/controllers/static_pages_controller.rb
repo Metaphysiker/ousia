@@ -9,6 +9,10 @@ class StaticPagesController < ApplicationController
     @post = Post.find_by_section("courses")
   end
 
+  def demo
+
+  end
+
 
   private
 

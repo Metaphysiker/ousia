@@ -4,9 +4,10 @@ Rails.application.routes.draw do
   resources :pdfs
   resources :videos
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'static_pages#welcome'
+  root 'static_pages#demo'
 
   get '/courses', to: 'static_pages#courses'
+  get '/demo', to: 'static_pages#demo'
 
   get "/getpdf/:url", to: 'pdfs#getpdf', as: 'getpdf'
 
